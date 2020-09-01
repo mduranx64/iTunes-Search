@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		495E72C324F97BC80004A688 /* iTunesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E72B924F97BC80004A688 /* iTunesSearch.framework */; };
+		495E72D524F982DA0004A688 /* ITunesRemoteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72D424F982DA0004A688 /* ITunesRemoteResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		495E72BD24F97BC80004A688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495E72C224F97BC80004A688 /* iTunesSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E72C924F97BC80004A688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495E72D424F982DA0004A688 /* ITunesRemoteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesRemoteResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,9 @@
 		495E72BB24F97BC80004A688 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				495E72D324F97CE70004A688 /* Search Feature */,
+				495E72D724FEB5650004A688 /* Search Cache */,
+				495E72D624FEB53F0004A688 /* Search API */,
 				495E72BD24F97BC80004A688 /* Info.plist */,
 			);
 			path = iTunesSearch;
@@ -78,6 +83,28 @@
 				495E72C924F97BC80004A688 /* Info.plist */,
 			);
 			path = iTunesSearchTests;
+			sourceTree = "<group>";
+		};
+		495E72D324F97CE70004A688 /* Search Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Feature";
+			sourceTree = "<group>";
+		};
+		495E72D624FEB53F0004A688 /* Search API */ = {
+			isa = PBXGroup;
+			children = (
+				495E72D424F982DA0004A688 /* ITunesRemoteResult.swift */,
+			);
+			path = "Search API";
+			sourceTree = "<group>";
+		};
+		495E72D724FEB5650004A688 /* Search Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Cache";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				TargetAttributes = {
 					495E72B824F97BC80004A688 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					495E72C124F97BC80004A688 = {
 						CreatedOnToolsVersion = 11.6;
@@ -188,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495E72D524F982DA0004A688 /* ITunesRemoteResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +360,7 @@
 		495E72CE24F97BC80004A688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -348,6 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mduranx64.iTunesSearch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,6 +386,7 @@
 		495E72CF24F97BC80004A688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -379,6 +411,7 @@
 		495E72D124F97BC80004A688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 99UW94BPG2;
@@ -397,6 +430,7 @@
 		495E72D224F97BC80004A688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 99UW94BPG2;
