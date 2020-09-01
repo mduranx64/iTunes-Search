@@ -33,7 +33,7 @@ class HTTPClientSpy: HTTPClient {
 class LoadSearchFromRemoteUseCaseTests: XCTestCase {
 
     func test_load_requestsDataFromURL() {
-        let url = URL(string: "https://test-url.com")!
+        let url = makeTestURL()
         let (sut, client) = makeSUT()
         
         sut.load(from: url) { _ in }
@@ -42,7 +42,7 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
     }
     
     func test_loadTwice_requestsDataFromURLTwoTimes() {
-        let url = URL(string: "https://test-url.com")!
+        let url = makeTestURL()
         let (sut, client) = makeSUT()
         
         sut.load(from: url) { _ in }
@@ -56,5 +56,9 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
         let client = HTTPClientSpy()
         let sut = RemoteSearchLoader(client: client)
         return (sut, client)
+    }
+    
+    private func makeTestURL() -> URL {
+        return URL(string: "https://test-url.com")!
     }
 }
