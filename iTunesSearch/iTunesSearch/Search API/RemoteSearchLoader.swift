@@ -42,6 +42,7 @@ public final class RemoteSearchLoader: SearchLoader {
     
     public enum Error: Swift.Error {
         case connectivity
+        case invalidData
     }
     
     private let client: HTTPClient
@@ -52,7 +53,13 @@ public final class RemoteSearchLoader: SearchLoader {
     
     public func load(from url: URL, completion: @escaping (SearchLoader.Result) -> Void) {
         client.get(from: url) { result in
-            completion(.failure(Error.connectivity))
+            
+            switch result {
+            case .success(_):
+                completion(.success([]))
+            case .failure(_):
+                completion(.failure(Error.connectivity))
+            }
         }
     }
 
