@@ -40,6 +40,17 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
         
         XCTAssertEqual(client.requestedURLs, [url])
     }
+    
+    func test_loadTwice_requestsDataFromURLTwoTimes() {
+        let url = URL(string: "https://test-url.com")!
+        let (sut, client) = makeSUT()
+        
+        sut.load(from: url) { _ in }
+        sut.load(from: url) { _ in }
+        
+        XCTAssertEqual(client.requestedURLs, [url, url])
+
+    }
 
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: RemoteSearchLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
