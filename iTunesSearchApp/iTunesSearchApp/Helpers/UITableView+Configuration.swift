@@ -12,6 +12,7 @@ import UIKit
 extension UITableView {
     static func makeSearchTableView() -> UITableView {
         let tableView = UITableView()
+        tableView.tableFooterView = UIView()
         tableView.registerCell(with: UITableViewCell.self)
         return tableView
     }
