@@ -170,11 +170,8 @@
 		495E72F524FFC4240004A688 /* iTunesSearchApp */ = {
 			isa = PBXGroup;
 			children = (
-				4906733024FFF4460039EBF1 /* Search Feature */,
-				4906732D24FFF4460039EBF1 /* Search Cache */,
-				4906733624FFF4460039EBF1 /* Search API */,
-				4906733924FFF4460039EBF1 /* Search Presentacion */,
-				496C46942500203C0016780F /* Search UI */,
+				496C4695250028010016780F /* Search Screen */,
+				496C4696250028290016780F /* Details Screen */,
 				4906732C24FFF42D0039EBF1 /* Main Composition */,
 				495E72F624FFC4240004A688 /* AppDelegate.swift */,
 				495E72FF24FFC4280004A688 /* Assets.xcassets */,
@@ -200,6 +197,25 @@
 				49867ABD24FFCA3C002C3738 /* Controllers */,
 			);
 			path = "Search UI";
+			sourceTree = "<group>";
+		};
+		496C4695250028010016780F /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4906733024FFF4460039EBF1 /* Search Feature */,
+				4906732D24FFF4460039EBF1 /* Search Cache */,
+				4906733624FFF4460039EBF1 /* Search API */,
+				4906733924FFF4460039EBF1 /* Search Presentacion */,
+				496C46942500203C0016780F /* Search UI */,
+			);
+			path = "Search Screen";
+			sourceTree = "<group>";
+		};
+		496C4696250028290016780F /* Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Details Screen";
 			sourceTree = "<group>";
 		};
 		49867ABD24FFCA3C002C3738 /* Controllers */ = {
