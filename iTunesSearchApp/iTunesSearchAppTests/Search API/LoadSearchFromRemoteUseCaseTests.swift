@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import iTunesSearch
+import iTunesSearchApp
 
 class HTTPClientSpy: HTTPClient {
     

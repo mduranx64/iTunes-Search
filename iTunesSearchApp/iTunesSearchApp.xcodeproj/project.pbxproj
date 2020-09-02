@@ -3,16 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */; };
-		4906733D24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */; };
-		4906733E24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733C24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift */; };
+		4906733D24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */; platformFilter = ios; };
+		4906733E24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733C24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift */; platformFilter = ios; };
 		495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72F624FFC4240004A688 /* AppDelegate.swift */; };
 		495E730024FFC4280004A688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E72FF24FFC4280004A688 /* Assets.xcassets */; };
 		495E730324FFC4280004A688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E730124FFC4280004A688 /* LaunchScreen.storyboard */; };
+		496C468524FFF8670016780F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732E24FFF4460039EBF1 /* Song.swift */; };
+		496C468624FFF8670016780F /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732F24FFF4460039EBF1 /* SearchLoader.swift */; };
+		496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */; };
+		496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */; };
+		496C468924FFF86C0016780F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733324FFF4460039EBF1 /* HTTPClient.swift */; };
+		496C468A24FFF86C0016780F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733424FFF4460039EBF1 /* URLSessionHTTPClient.swift */; };
+		496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733524FFF4460039EBF1 /* RemoteSearchLoader.swift */; };
+		496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733724FFF4460039EBF1 /* SearchPresenter.swift */; };
+		496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733824FFF4460039EBF1 /* SearchViewModel.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
@@ -300,12 +309,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */,
+				496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */,
+				496C468524FFF8670016780F /* Song.swift in Sources */,
 				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
+				496C468624FFF8670016780F /* SearchLoader.swift in Sources */,
 				4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */,
+				496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */,
+				496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */,
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
+				496C468924FFF86C0016780F /* HTTPClient.swift in Sources */,
 				49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */,
 				49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */,
+				496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */,
 				49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */,
+				496C468A24FFF86C0016780F /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
