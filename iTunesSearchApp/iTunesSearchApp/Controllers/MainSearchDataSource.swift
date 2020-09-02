@@ -26,7 +26,8 @@ extension MainSearchDataSourse: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
         let song = songs[indexPath.row]
-        cell.textLabel?.text = "\(song.trackName)"
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = "\(song.trackName)\n\(song.artistName)"
     
         return cell
     }
