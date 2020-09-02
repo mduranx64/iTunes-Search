@@ -22,7 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configureWindow(_ window: UIWindow) {
         self.window = window
         window.rootViewController = UINavigationController(
-            rootViewController: ViewController()
+            rootViewController: MainSearchViewController(
+                tableView: UITableView.makeSearchTableView(),
+                dataSource: MainSearchDataSourse()
+            )
         )
         window.makeKeyAndVisible()
     }
