@@ -11,17 +11,22 @@ import UIKit
 
 class MainSearchDataSourse: NSObject {
     
+    private var songs = [Song]()
+    
+    func update(_ songs: [Song]) {
+        self.songs = songs
+    }
 }
 
 extension MainSearchDataSourse: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return songs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        
-        cell.textLabel?.text = "\(indexPath.row)"
+        let song = songs[indexPath.row]
+        cell.textLabel?.text = "\(song.trackName)"
     
         return cell
     }

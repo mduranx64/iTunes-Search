@@ -10,7 +10,6 @@ import Foundation
 
 public protocol SearchView {
     func display(_ viewModel: SearchViewModel)
-    func search(_ text: String)
 }
 
 public final class SearchPresenter {

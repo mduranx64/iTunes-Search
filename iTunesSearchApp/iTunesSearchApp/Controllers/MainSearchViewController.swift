@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 
 protocol MainSearchViewControllerDelegate {
-    func didRequestSearchWith(_ text: String)
+    func didRequestSearchWith(_ text: String?)
 }
 
 class MainSearchViewController: UIViewController {
 
     private let tableView: UITableView
-    private let dataSource: UITableViewDataSource
+    private let dataSource: MainSearchDataSourse
     private let searchController = UISearchController(searchResultsController: nil)
     private let delegate: MainSearchViewControllerDelegate
     
-    init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: UITableViewDataSource) {
+    init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: MainSearchDataSourse) {
         self.tableView = tableView
         self.dataSource = dataSource
         self.delegate = delegate
@@ -34,7 +34,6 @@ class MainSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Songs"
         navigationItem.searchController = searchController
@@ -45,12 +44,16 @@ class MainSearchViewController: UIViewController {
     
 }
 
-extension MainSearchViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        
+extension MainSearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let text = searchBar.text
+        delegate.didRequestSearchWith(text)
     }
 }
 
-extension MainSearchViewController: UISearchBarDelegate {
-    
+extension MainSearchViewController: SearchView {
+    func display(_ viewModel: SearchViewModel) {
+        dataSource.update(viewModel.songs)
+        tableView.reloadData()
+    }
 }
