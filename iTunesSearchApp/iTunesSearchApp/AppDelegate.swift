@@ -26,10 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configureWindow(_ window: UIWindow) {
         
         let remoteSearchLoader = RemoteSearchLoader(client: httpClient)
+        let localSearchLoader = LocalSearchLoader(searchCache: InMemorySearchChace())
         
         self.window = window
         window.rootViewController = UINavigationController(
-            rootViewController: SearchUIComposer.searchComposedWith(searchLoader: remoteSearchLoader)
+            rootViewController: SearchUIComposer.searchComposedWith(
+                searchLoader: SearchLoaderWithFallbackComposite(
+                    primary: remoteSearchLoader,
+                    fallback: localSearchLoader))
         )
         window.makeKeyAndVisible()
     }

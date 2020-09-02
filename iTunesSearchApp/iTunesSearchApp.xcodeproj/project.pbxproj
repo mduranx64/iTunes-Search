@@ -25,6 +25,9 @@
 		496C468F250010C90016780F /* SearchUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C468E250010C90016780F /* SearchUIComposer.swift */; };
 		496C4698250029950016780F /* SearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C4697250029950016780F /* SearchCache.swift */; };
 		496C469A25002B030016780F /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469925002B030016780F /* HTTPClientSpy.swift */; };
+		496C469C25002BDF0016780F /* LocalSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469B25002BDF0016780F /* LocalSearchLoader.swift */; };
+		496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469E25002E1A0016780F /* InMemorySearchCache.swift */; };
+		496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
@@ -65,6 +68,9 @@
 		496C468E250010C90016780F /* SearchUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIComposer.swift; sourceTree = "<group>"; };
 		496C4697250029950016780F /* SearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCache.swift; sourceTree = "<group>"; };
 		496C469925002B030016780F /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		496C469B25002BDF0016780F /* LocalSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchLoader.swift; sourceTree = "<group>"; };
+		496C469E25002E1A0016780F /* InMemorySearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemorySearchCache.swift; sourceTree = "<group>"; };
+		496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 			children = (
 				4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */,
 				496C468E250010C90016780F /* SearchUIComposer.swift */,
+				496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */,
 			);
 			path = "Main Composition";
 			sourceTree = "<group>";
@@ -109,7 +116,8 @@
 		4906732D24FFF4460039EBF1 /* Search Cache */ = {
 			isa = PBXGroup;
 			children = (
-				496C4697250029950016780F /* SearchCache.swift */,
+				496C469B25002BDF0016780F /* LocalSearchLoader.swift */,
+				496C469E25002E1A0016780F /* InMemorySearchCache.swift */,
 			);
 			path = "Search Cache";
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			children = (
 				4906732E24FFF4460039EBF1 /* Song.swift */,
 				4906732F24FFF4460039EBF1 /* SearchLoader.swift */,
+				496C4697250029950016780F /* SearchCache.swift */,
 			);
 			path = "Search Feature";
 			sourceTree = "<group>";
@@ -348,11 +357,14 @@
 				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
 				496C4698250029950016780F /* SearchCache.swift in Sources */,
 				496C468624FFF8670016780F /* SearchLoader.swift in Sources */,
+				496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */,
 				4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */,
 				496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */,
+				496C469C25002BDF0016780F /* LocalSearchLoader.swift in Sources */,
 				496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */,
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
 				496C468924FFF86C0016780F /* HTTPClient.swift in Sources */,
+				496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */,
 				49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */,
 				49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */,
 				496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */,
