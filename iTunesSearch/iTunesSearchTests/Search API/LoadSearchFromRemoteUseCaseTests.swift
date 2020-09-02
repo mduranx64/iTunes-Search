@@ -97,6 +97,15 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
             client.complete(withStatusCode: 200, data: invalidJSON)
         })
     }
+    
+    func test_load_deliversEmptyItemsWhenEmptyJSONList() {
+        let (sut, client) = makeSUT()
+        
+        expect(from: makeTestURL(), sut: sut, toCompleteWith: .success([]), when: {
+            let emptyListJSON = makeItemsJSON([])
+            client.complete(withStatusCode: 200, data: emptyListJSON)
+        })
+    }
 
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: RemoteSearchLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
