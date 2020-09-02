@@ -174,8 +174,7 @@
 				4906732D24FFF4460039EBF1 /* Search Cache */,
 				4906733624FFF4460039EBF1 /* Search API */,
 				4906733924FFF4460039EBF1 /* Search Presentacion */,
-				49867ABD24FFCA3C002C3738 /* Controllers */,
-				49867ABE24FFCA55002C3738 /* Helpers */,
+				496C46942500203C0016780F /* Search UI */,
 				4906732C24FFF42D0039EBF1 /* Main Composition */,
 				495E72F624FFC4240004A688 /* AppDelegate.swift */,
 				495E72FF24FFC4280004A688 /* Assets.xcassets */,
@@ -192,6 +191,15 @@
 				495E730F24FFC4280004A688 /* Info.plist */,
 			);
 			path = iTunesSearchAppTests;
+			sourceTree = "<group>";
+		};
+		496C46942500203C0016780F /* Search UI */ = {
+			isa = PBXGroup;
+			children = (
+				49867ABE24FFCA55002C3738 /* Helpers */,
+				49867ABD24FFCA3C002C3738 /* Controllers */,
+			);
+			path = "Search UI";
 			sourceTree = "<group>";
 		};
 		49867ABD24FFCA3C002C3738 /* Controllers */ = {
