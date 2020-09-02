@@ -7,19 +7,18 @@
 //
 
 import Foundation
-
 import UIKit
 
 class MainSearchViewController: UIViewController {
 
-    private var tableView: UITableView
-    private var dataSource: UITableViewDataSource
+    private let tableView: UITableView
+    private let dataSource: UITableViewDataSource
+    private let searchController = UISearchController(searchResultsController: nil)
     
     init(tableView: UITableView, dataSource: UITableViewDataSource) {
         self.tableView = tableView
         self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
-        self.view = tableView
         self.tableView.dataSource = dataSource
     }
     
@@ -29,5 +28,23 @@ class MainSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Songs"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        searchController.searchBar.delegate = self
+        self.view = tableView
     }
+    
+}
+
+extension MainSearchViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+}
+
+extension MainSearchViewController: UISearchBarDelegate {
+    
 }
