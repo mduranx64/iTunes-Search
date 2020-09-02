@@ -8,36 +8,6 @@
 
 import Foundation
 
-public struct Song: Codable {
-    public let trackId: Int
-    public let artistName: String
-    public let collectionName: String
-    public let trackName: String
-    public let previewURL: String
-    public let artworkUrl100: String
-
-    public init(
-        trackId: Int,
-        artistName: String,
-        collectionName: String,
-        trackName: String,
-        previewURL: String,
-        artworkUrl100: String) {
-        self.trackId = trackId
-        self.artistName = artistName
-        self.collectionName = collectionName
-        self.trackName = trackName
-        self.previewURL = previewURL
-        self.artworkUrl100 = previewURL
-    }
-}
-
-public protocol SearchLoader {
-    typealias Result = Swift.Result<[Song], Error>
-    
-    func load(from url: URL, completion: @escaping (Result) -> Void)
-}
-
 public final class RemoteSearchLoader: SearchLoader {
     
     public enum Error: Swift.Error {
@@ -85,18 +55,5 @@ private extension Array where Element == Result {
                 artworkUrl100: $0.artworkUrl100
             )
         }
-    }
-}
-
-final class SearchItemsMapper {
-    
-    static func map(_ data: Data, from response: HTTPURLResponse) throws -> [Result] {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .useDefaultKeys
-        guard response.statusCode == 200, let itunesResult = try? decoder.decode(ITunesRemoteResult.self, from: data) else {
-            throw RemoteSearchLoader.Error.invalidData
-        }
-        
-        return itunesResult.results
     }
 }

@@ -14,6 +14,9 @@
 		495E72DD24FEBFD90004A688 /* RemoteSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72DC24FEBFD90004A688 /* RemoteSearchLoader.swift */; };
 		495E72E024FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72DF24FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift */; };
 		495E72E224FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */; };
+		495E72E424FFC1FD0004A688 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E324FFC1FD0004A688 /* Song.swift */; };
+		495E72E624FFC2250004A688 /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E524FFC2250004A688 /* SearchLoader.swift */; };
+		495E72E924FFC2E20004A688 /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E724FFC2600004A688 /* SearchItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		495E72DC24FEBFD90004A688 /* RemoteSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchLoader.swift; sourceTree = "<group>"; };
 		495E72DF24FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSearchFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTraking.swift"; sourceTree = "<group>"; };
+		495E72E324FFC1FD0004A688 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		495E72E524FFC2250004A688 /* SearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoader.swift; sourceTree = "<group>"; };
+		495E72E724FFC2600004A688 /* SearchItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		495E72D324F97CE70004A688 /* Search Feature */ = {
 			isa = PBXGroup;
 			children = (
+				495E72E324FFC1FD0004A688 /* Song.swift */,
+				495E72E524FFC2250004A688 /* SearchLoader.swift */,
 			);
 			path = "Search Feature";
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 		495E72D624FEB53F0004A688 /* Search API */ = {
 			isa = PBXGroup;
 			children = (
+				495E72E724FFC2600004A688 /* SearchItemsMapper.swift */,
 				495E72D424F982DA0004A688 /* ITunesRemoteResult.swift */,
 				495E72D824FEB6BD0004A688 /* HTTPClient.swift */,
 				495E72DA24FEB9100004A688 /* URLSessionHTTPClient.swift */,
@@ -240,10 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495E72E924FFC2E20004A688 /* SearchItemsMapper.swift in Sources */,
 				495E72DD24FEBFD90004A688 /* RemoteSearchLoader.swift in Sources */,
 				495E72D924FEB6BD0004A688 /* HTTPClient.swift in Sources */,
+				495E72E624FFC2250004A688 /* SearchLoader.swift in Sources */,
 				495E72D524F982DA0004A688 /* ITunesRemoteResult.swift in Sources */,
 				495E72DB24FEB9100004A688 /* URLSessionHTTPClient.swift in Sources */,
+				495E72E424FFC1FD0004A688 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
