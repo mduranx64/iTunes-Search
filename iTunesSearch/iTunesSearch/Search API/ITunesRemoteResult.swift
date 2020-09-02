@@ -16,19 +16,10 @@ struct ITunesRemoteResult: Codable {
 
 // MARK: - Result
 struct Result: Codable {
-    public let trackID: Int
+    public let trackId: Int
     public let artistName: String
     public let collectionName: String
     public let trackName: String
     public let previewURL: String
     public let artworkUrl100: String
-
-    enum CodingKeys: String, CodingKey {
-        case trackID = "trackId"
-        case artistName
-        case collectionName
-        case trackName
-        case previewURL = "previewUrl"
-        case artworkUrl100
-    }
 }

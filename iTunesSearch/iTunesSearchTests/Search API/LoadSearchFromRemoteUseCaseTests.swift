@@ -88,6 +88,15 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
             })
         }
     }
+    
+    func test_load_deliversErrorWhenHTTPResponseIsAnInvalidJSON() {
+        let (sut, client) = makeSUT()
+        
+        expect(from: makeTestURL(), sut: sut, toCompleteWith: .failure(RemoteSearchLoader.Error.invalidData), when: {
+            let invalidJSON = Data("invalid json".utf8)
+            client.complete(withStatusCode: 200, data: invalidJSON)
+        })
+    }
 
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: RemoteSearchLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
