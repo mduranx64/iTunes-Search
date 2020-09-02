@@ -106,6 +106,35 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
             client.complete(withStatusCode: 200, data: emptyListJSON)
         })
     }
+    
+    func test_load_deliversSongsWhenResponseWithJSONItems() {
+        let (sut, client) = makeSUT()
+
+        let song1 = makeSong(
+            trackId: 111,
+            artistName: "Adele",
+            collectionName: "19",
+            trackName: "Tired",
+            previewURL: makeTestURL(path:"preview").absoluteString,
+            artworkUrl100: makeTestURL(path: "artwork").absoluteString
+        )
+        
+        let song2 = makeSong(
+            trackId: 111,
+            artistName: "Adele",
+            collectionName: "19",
+            trackName: "My Same",
+            previewURL: makeTestURL(path:"preview").absoluteString,
+            artworkUrl100: makeTestURL(path: "artwork").absoluteString
+        )
+        
+        let songs = [song1.model, song2.model]
+        
+        expect(from: makeTestURL(), sut: sut, toCompleteWith: .success(songs), when: {
+            let json = makeItemsJSON([song1.json, song2.json])
+            client.complete(withStatusCode: 200, data: json)
+        })
+    }
 
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: RemoteSearchLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
@@ -113,8 +142,9 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
         return (sut, client)
     }
     
-    private func makeTestURL() -> URL {
-        return URL(string: "https://test-url.com")!
+    private func makeTestURL(path: String = "") -> URL {
+        let url = URL(string: "https://test-url.com")!
+        return path.isEmpty ? url.appendingPathComponent(path) : url
     }
     
     private func expect(from url: URL, sut: RemoteSearchLoader, toCompleteWith expectedResult: RemoteSearchLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
@@ -141,5 +171,34 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
     private func makeItemsJSON(_ items: [[String: Any]]) -> Data {
         let json = ["items": items]
         return try! JSONSerialization.data(withJSONObject: json)
+    }
+    
+    private func makeSong(
+        trackId: Int,
+        artistName: String,
+        collectionName: String,
+        trackName: String,
+        previewURL: String,
+        artworkUrl100: String) -> (model: Song, json: [String: Any])
+    {
+        let song = Song(
+            trackId: trackId,
+            artistName: artistName,
+            collectionName: collectionName,
+            trackName: trackName,
+            previewURL: previewURL,
+            artworkUrl100: artworkUrl100
+        )
+        
+        let json = [
+            "trackId": trackName,
+            "artistName": artistName,
+            "collectionName": collectionName,
+            "trackName": trackName,
+            "previewURL": previewURL,
+            "artworkUrl100": artworkUrl100
+        ].compactMapValues { $0 }
+        
+        return (song, json)
     }
 }
