@@ -29,6 +29,8 @@
 		496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469E25002E1A0016780F /* InMemorySearchCache.swift */; };
 		496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */; };
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
+		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
+		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
@@ -73,6 +75,8 @@
 		496C469E25002E1A0016780F /* InMemorySearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemorySearchCache.swift; sourceTree = "<group>"; };
 		496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		496C46A4250042660016780F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		496C46A6250044330016780F /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		496C4696250028290016780F /* Details Screen */ = {
 			isa = PBXGroup;
 			children = (
+				496C46A4250042660016780F /* DetailsViewController.swift */,
+				496C46A6250044330016780F /* DetailsViewController.xib */,
 			);
 			path = "Details Screen";
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 			files = (
 				495E730324FFC4280004A688 /* LaunchScreen.storyboard in Resources */,
 				495E730024FFC4280004A688 /* Assets.xcassets in Resources */,
+				496C46A7250044330016780F /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +364,7 @@
 				496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */,
 				496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */,
 				496C468524FFF8670016780F /* Song.swift in Sources */,
+				496C46A5250042660016780F /* DetailsViewController.swift in Sources */,
 				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
 				496C4698250029950016780F /* SearchCache.swift in Sources */,
 				496C468624FFF8670016780F /* SearchLoader.swift in Sources */,
