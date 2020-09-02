@@ -139,6 +139,8 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: RemoteSearchLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteSearchLoader(client: client)
+        trackForMemoryLeaks(sut, file: file, line: line)
+        trackForMemoryLeaks(client, file: file, line: line)
         return (sut, client)
     }
     

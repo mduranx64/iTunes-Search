@@ -13,6 +13,7 @@
 		495E72DB24FEB9100004A688 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72DA24FEB9100004A688 /* URLSessionHTTPClient.swift */; };
 		495E72DD24FEBFD90004A688 /* RemoteSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72DC24FEBFD90004A688 /* RemoteSearchLoader.swift */; };
 		495E72E024FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72DF24FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift */; };
+		495E72E224FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		495E72DA24FEB9100004A688 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		495E72DC24FEBFD90004A688 /* RemoteSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchLoader.swift; sourceTree = "<group>"; };
 		495E72DF24FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSearchFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTraking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				495E72DF24FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift */,
+				495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */,
 			);
 			path = "Search API";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495E72E024FEC2870004A688 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */,
+				495E72E224FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
