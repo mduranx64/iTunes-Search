@@ -16,6 +16,10 @@ class MainSearchDataSourse: NSObject {
     func update(_ songs: [Song]) {
         self.songs = songs
     }
+    
+    func item(at index: Int) -> Song {
+        return self.songs[index]
+    }
 }
 
 extension MainSearchDataSourse: UITableViewDataSource {

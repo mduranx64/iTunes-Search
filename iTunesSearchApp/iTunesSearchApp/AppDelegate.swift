@@ -36,14 +36,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let remoteSearchLoader = RemoteSearchLoader(client: httpClient)
         
         self.window = window
-        window.rootViewController = UINavigationController(
-            rootViewController: SearchUIComposer.searchComposedWith(
-                searchLoader: SearchLoaderWithFallbackComposite(
-                    primary: SearchLoaderCacheDecorator(
-                        decoratee: remoteSearchLoader,
-                        searchCache: inMemorySearchChace),
-                    fallback: localSearchLoader))
+        
+        
+        
+        let mainSearchViewController = SearchUIComposer.searchComposedWith(
+        searchLoader: SearchLoaderWithFallbackComposite(
+            primary: SearchLoaderCacheDecorator(
+                decoratee: remoteSearchLoader,
+                searchCache: inMemorySearchChace),
+            fallback: localSearchLoader))
+            
+        let navigationController = UINavigationController(
+            rootViewController: mainSearchViewController
         )
+        
+        mainSearchViewController.detailsViewNavigation = { [weak navigationController] song in
+            
+            let detailsViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+            detailsViewController.song = song
+            navigationController?.pushViewController(detailsViewController, animated: true)
+        }
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
 }

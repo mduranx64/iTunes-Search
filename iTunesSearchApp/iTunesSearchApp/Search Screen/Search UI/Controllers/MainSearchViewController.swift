@@ -20,6 +20,8 @@ public class MainSearchViewController: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     private let delegate: MainSearchViewControllerDelegate
     
+    public var detailsViewNavigation: ((Song) -> ())?
+    
     init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: MainSearchDataSourse) {
         self.tableView = tableView
         self.dataSource = dataSource
@@ -40,6 +42,7 @@ public class MainSearchViewController: UIViewController {
         definesPresentationContext = true
         searchController.searchBar.delegate = self
         self.view = tableView
+        self.tableView.delegate = self
     }
     
 }
@@ -55,5 +58,12 @@ extension MainSearchViewController: SearchView {
     public func display(_ viewModel: SearchViewModel) {
         dataSource.update(viewModel.songs)
         tableView.reloadData()
+    }
+}
+
+extension MainSearchViewController: UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let song = dataSource.item(at: indexPath.row)
+        self.detailsViewNavigation?(song)
     }
 }

@@ -13,6 +13,7 @@
                 <outlet property="artistName" destination="kcl-lv-hxs" id="Jay-0a-YiN"/>
                 <outlet property="artworkImage" destination="zHv-qZ-TZZ" id="XKF-OE-jdX"/>
                 <outlet property="songName" destination="NJt-xp-J3A" id="QdO-lb-uOA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jC4-wT-zRg"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
