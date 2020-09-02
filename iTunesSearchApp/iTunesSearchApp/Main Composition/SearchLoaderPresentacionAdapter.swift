@@ -23,7 +23,9 @@ final class SearchLoaderPresentacionAdapter: MainSearchViewControllerDelegate {
         searchLoader.load(from: url) { [weak self] result in
             switch result {
             case let .success(songs):
-                self?.presenter?.didFinishSearchLoading(with: songs)
+                DispatchQueue.main.async {
+                    self?.presenter?.didFinishSearchLoading(with: songs)
+                }
             case let .failure(_):
                 break
             }
