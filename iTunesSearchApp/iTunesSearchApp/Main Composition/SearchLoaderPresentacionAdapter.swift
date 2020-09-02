@@ -26,7 +26,7 @@ final class SearchLoaderPresentacionAdapter: MainSearchViewControllerDelegate {
                 DispatchQueue.main.async {
                     self?.presenter?.didFinishSearchLoading(with: songs)
                 }
-            case let .failure(_):
+            case .failure(_):
                 break
             }
         }
