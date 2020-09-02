@@ -24,6 +24,7 @@
 		496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733824FFF4460039EBF1 /* SearchViewModel.swift */; };
 		496C468F250010C90016780F /* SearchUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C468E250010C90016780F /* SearchUIComposer.swift */; };
 		496C4698250029950016780F /* SearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C4697250029950016780F /* SearchCache.swift */; };
+		496C469A25002B030016780F /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469925002B030016780F /* HTTPClientSpy.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
@@ -63,6 +64,7 @@
 		495E730F24FFC4280004A688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496C468E250010C90016780F /* SearchUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIComposer.swift; sourceTree = "<group>"; };
 		496C4697250029950016780F /* SearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCache.swift; sourceTree = "<group>"; };
+		496C469925002B030016780F /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				4906733C24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift */,
 				4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */,
+				496C469925002B030016780F /* HTTPClientSpy.swift */,
 			);
 			path = "Search API";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4906733D24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift in Sources */,
+				496C469A25002B030016780F /* HTTPClientSpy.swift in Sources */,
 				4906733E24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
