@@ -9,15 +9,21 @@
 import Foundation
 import UIKit
 
+protocol MainSearchViewControllerDelegate {
+    func didRequestSearchWith(_ text: String)
+}
+
 class MainSearchViewController: UIViewController {
 
     private let tableView: UITableView
     private let dataSource: UITableViewDataSource
     private let searchController = UISearchController(searchResultsController: nil)
+    private let delegate: MainSearchViewControllerDelegate
     
-    init(tableView: UITableView, dataSource: UITableViewDataSource) {
+    init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: UITableViewDataSource) {
         self.tableView = tableView
         self.dataSource = dataSource
+        self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
         self.tableView.dataSource = dataSource
     }

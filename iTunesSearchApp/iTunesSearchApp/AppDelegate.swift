@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         window.rootViewController = UINavigationController(
             rootViewController: MainSearchViewController(
+                delegate: SearchLoaderPresentacionAdapter(),
                 tableView: UITableView.makeSearchTableView(),
                 dataSource: MainSearchDataSourse()
             )
