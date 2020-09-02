@@ -162,7 +162,7 @@ class LoadSearchFromRemoteUseCaseTests: XCTestCase {
             "artistName": artistName,
             "collectionName": collectionName,
             "trackName": trackName,
-            "previewURL": previewURL,
+            "previewUrl": previewURL,
             "artworkUrl100": artworkUrl100
         ].compactMapValues { $0 }
         
