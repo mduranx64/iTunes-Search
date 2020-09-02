@@ -20,6 +20,7 @@ public final class SearchUIComposer {
             tableView: UITableView.makeSearchTableView(),
             dataSource: MainSearchDataSourse()
         )
+        mainSearchViewController.title = "iTunes Search"
         
         presentationAdapter.presenter = SearchPresenter(searchView: mainSearchViewController)
         
