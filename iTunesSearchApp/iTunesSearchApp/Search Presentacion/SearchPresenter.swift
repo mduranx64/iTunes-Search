@@ -18,4 +18,8 @@ public final class SearchPresenter {
     public init(searchView: SearchView) {
         self.searchView = searchView
     }
+    
+    public func didFinishSearchLoading(with songs: [Song]) {
+        searchView.display(SearchViewModel(songs: songs))
+    }
 }

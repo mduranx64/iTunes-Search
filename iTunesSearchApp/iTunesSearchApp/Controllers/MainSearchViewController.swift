@@ -13,7 +13,7 @@ protocol MainSearchViewControllerDelegate {
     func didRequestSearchWith(_ text: String?)
 }
 
-class MainSearchViewController: UIViewController {
+public class MainSearchViewController: UIViewController {
 
     private let tableView: UITableView
     private let dataSource: MainSearchDataSourse
@@ -32,7 +32,7 @@ class MainSearchViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Songs"
@@ -45,14 +45,14 @@ class MainSearchViewController: UIViewController {
 }
 
 extension MainSearchViewController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let text = searchBar.text
         delegate.didRequestSearchWith(text)
     }
 }
 
 extension MainSearchViewController: SearchView {
-    func display(_ viewModel: SearchViewModel) {
+    public func display(_ viewModel: SearchViewModel) {
         dataSource.update(viewModel.songs)
         tableView.reloadData()
     }

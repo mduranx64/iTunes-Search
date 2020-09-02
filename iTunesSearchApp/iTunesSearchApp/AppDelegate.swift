@@ -12,6 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    private lazy var httpClient: HTTPClient = {
+        URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -20,13 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func configureWindow(_ window: UIWindow) {
+        
+        let remoteSearchLoader = RemoteSearchLoader(client: httpClient)
+        
         self.window = window
         window.rootViewController = UINavigationController(
-            rootViewController: MainSearchViewController(
-                delegate: SearchLoaderPresentacionAdapter(),
-                tableView: UITableView.makeSearchTableView(),
-                dataSource: MainSearchDataSourse()
-            )
+            rootViewController: SearchUIComposer.searchComposedWith(searchLoader: remoteSearchLoader)
         )
         window.makeKeyAndVisible()
     }
