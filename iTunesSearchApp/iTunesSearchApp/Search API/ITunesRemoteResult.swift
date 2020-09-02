@@ -20,6 +20,6 @@ struct Result: Codable {
     public let artistName: String
     public let collectionName: String
     public let trackName: String
-    public let previewURL: String
+    public let previewUrl: String
     public let artworkUrl100: String
 }

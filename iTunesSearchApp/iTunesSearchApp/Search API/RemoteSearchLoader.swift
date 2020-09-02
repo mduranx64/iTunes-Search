@@ -51,7 +51,7 @@ private extension Array where Element == Result {
                 artistName: $0.artistName,
                 collectionName: $0.collectionName,
                 trackName: $0.trackName,
-                previewURL: $0.previewURL,
+                previewURL: $0.previewUrl,
                 artworkUrl100: $0.artworkUrl100
             )
         }
