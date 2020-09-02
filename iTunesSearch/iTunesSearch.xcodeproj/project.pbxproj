@@ -17,6 +17,8 @@
 		495E72E424FFC1FD0004A688 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E324FFC1FD0004A688 /* Song.swift */; };
 		495E72E624FFC2250004A688 /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E524FFC2250004A688 /* SearchLoader.swift */; };
 		495E72E924FFC2E20004A688 /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72E724FFC2600004A688 /* SearchItemsMapper.swift */; };
+		49A9E0BD24FFD9370003EF92 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9E0BC24FFD9370003EF92 /* SearchPresenter.swift */; };
+		49A9E0BF24FFD9DE0003EF92 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9E0BE24FFD9DE0003EF92 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		495E72E324FFC1FD0004A688 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		495E72E524FFC2250004A688 /* SearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoader.swift; sourceTree = "<group>"; };
 		495E72E724FFC2600004A688 /* SearchItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapper.swift; sourceTree = "<group>"; };
+		49A9E0BC24FFD9370003EF92 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		49A9E0BE24FFD9DE0003EF92 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				495E72D324F97CE70004A688 /* Search Feature */,
 				495E72D724FEB5650004A688 /* Search Cache */,
 				495E72D624FEB53F0004A688 /* Search API */,
+				49A9E0BB24FFD90C0003EF92 /* Search Presentacion */,
 				495E72BD24F97BC80004A688 /* Info.plist */,
 			);
 			path = iTunesSearch;
@@ -137,6 +142,15 @@
 				495E72E124FFBFA80004A688 /* XCTestCase+MemoryLeakTraking.swift */,
 			);
 			path = "Search API";
+			sourceTree = "<group>";
+		};
+		49A9E0BB24FFD90C0003EF92 /* Search Presentacion */ = {
+			isa = PBXGroup;
+			children = (
+				49A9E0BC24FFD9370003EF92 /* SearchPresenter.swift */,
+				49A9E0BE24FFD9DE0003EF92 /* SearchViewModel.swift */,
+			);
+			path = "Search Presentacion";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +269,8 @@
 				495E72E624FFC2250004A688 /* SearchLoader.swift in Sources */,
 				495E72D524F982DA0004A688 /* ITunesRemoteResult.swift in Sources */,
 				495E72DB24FEB9100004A688 /* URLSessionHTTPClient.swift in Sources */,
+				49A9E0BF24FFD9DE0003EF92 /* SearchViewModel.swift in Sources */,
+				49A9E0BD24FFD9370003EF92 /* SearchPresenter.swift in Sources */,
 				495E72E424FFC1FD0004A688 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
