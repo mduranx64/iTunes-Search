@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1160"
+   LastUpgradeVersion = "1170"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "495E72B824F97BC80004A688"
-               BuildableName = "iTunesSearch.framework"
-               BlueprintName = "iTunesSearch"
-               ReferencedContainer = "container:iTunesSearch.xcodeproj">
+               BlueprintIdentifier = "495E72F224FFC4240004A688"
+               BuildableName = "iTunesSearchApp.app"
+               BlueprintName = "iTunesSearchApp"
+               ReferencedContainer = "container:iTunesSearchApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,19 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "495E72C124F97BC80004A688"
-               BuildableName = "iTunesSearchTests.xctest"
-               BlueprintName = "iTunesSearchTests"
-               ReferencedContainer = "container:iTunesSearch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -51,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "495E72F224FFC4240004A688"
+            BuildableName = "iTunesSearchApp.app"
+            BlueprintName = "iTunesSearchApp"
+            ReferencedContainer = "container:iTunesSearchApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -58,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "495E72B824F97BC80004A688"
-            BuildableName = "iTunesSearch.framework"
-            BlueprintName = "iTunesSearch"
-            ReferencedContainer = "container:iTunesSearch.xcodeproj">
+            BlueprintIdentifier = "495E72F224FFC4240004A688"
+            BuildableName = "iTunesSearchApp.app"
+            BlueprintName = "iTunesSearchApp"
+            ReferencedContainer = "container:iTunesSearchApp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
