@@ -28,6 +28,7 @@
 		496C469C25002BDF0016780F /* LocalSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469B25002BDF0016780F /* LocalSearchLoader.swift */; };
 		496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469E25002E1A0016780F /* InMemorySearchCache.swift */; };
 		496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */; };
+		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
@@ -71,6 +72,7 @@
 		496C469B25002BDF0016780F /* LocalSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchLoader.swift; sourceTree = "<group>"; };
 		496C469E25002E1A0016780F /* InMemorySearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemorySearchCache.swift; sourceTree = "<group>"; };
 		496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */,
 				496C468E250010C90016780F /* SearchUIComposer.swift */,
 				496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */,
+				496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */,
 			);
 			path = "Main Composition";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
 				496C468924FFF86C0016780F /* HTTPClient.swift in Sources */,
 				496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */,
+				496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */,
 				49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */,
 				49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */,
 				496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */,
