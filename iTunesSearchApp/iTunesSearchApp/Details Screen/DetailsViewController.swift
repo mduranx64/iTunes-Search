@@ -18,6 +18,8 @@ public final class DetailsViewController: UIViewController {
     
     public var song: Song?
     
+    public var searchImageDataLoader: SearchImageDataLoader?
+    
     private var player: AVPlayer?
     
     @IBAction func playSong(_ sender: UIButton)
@@ -29,5 +31,21 @@ public final class DetailsViewController: UIViewController {
         }
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let song = song, let artworkUrl = URL(string: song.artworkUrl100) else { return }
+        searchImageDataLoader?.loadImageData(from: artworkUrl) { [weak self] result  in
+            switch result {
+            case let .success(data):
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data)
+                    self?.artworkImage.image = image
+                }
+            case .failure:
+                break
+            }
+        }
+
+    }
 }
 

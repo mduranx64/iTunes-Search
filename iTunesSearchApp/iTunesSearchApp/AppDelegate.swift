@@ -34,10 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configureWindow(_ window: UIWindow) {
         
         let remoteSearchLoader = RemoteSearchLoader(client: httpClient)
-        
+        let remoteSearchImageDataLoader = RemoteSearchImageDataLoader(client: self.httpClient)
+
         self.window = window
-        
-        
         
         let mainSearchViewController = SearchUIComposer.searchComposedWith(
         searchLoader: SearchLoaderWithFallbackComposite(
@@ -54,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let detailsViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
             detailsViewController.song = song
+            detailsViewController.searchImageDataLoader = remoteSearchImageDataLoader
             navigationController?.pushViewController(detailsViewController, animated: true)
         }
         window.rootViewController = navigationController

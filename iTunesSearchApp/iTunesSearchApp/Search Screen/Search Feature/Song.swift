@@ -28,6 +28,6 @@ public struct Song: Codable {
         self.collectionName = collectionName
         self.trackName = trackName
         self.previewURL = previewURL
-        self.artworkUrl100 = previewURL
+        self.artworkUrl100 = artworkUrl100
     }
 }
