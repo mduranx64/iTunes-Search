@@ -33,6 +33,17 @@ public final class DetailsViewController: UIViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        mapSong(song)
+        fetchImage()
+    }
+    
+    private func mapSong(_ song: Song?) {
+        self.artistName.text = song?.artistName
+        self.albumName.text = song?.collectionName
+        self.songName.text = song?.trackName
+    }
+    
+    private func fetchImage() {
         guard let song = song, let artworkUrl = URL(string: song.artworkUrl100) else { return }
         searchImageDataLoader?.loadImageData(from: artworkUrl) { [weak self] result  in
             switch result {
@@ -45,7 +56,6 @@ public final class DetailsViewController: UIViewController {
                 break
             }
         }
-
     }
 }
 
