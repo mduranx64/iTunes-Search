@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SearchFeature
+import SearchPresentacion
 
 protocol MainSearchViewControllerDelegate {
     func didRequestSearchWith(_ text: String?)

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SearchFeature
+import SearchPresentacion
 
 public final class SearchUIComposer {
     private init(){}
