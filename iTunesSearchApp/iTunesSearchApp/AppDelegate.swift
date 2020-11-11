@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SearchCache
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
