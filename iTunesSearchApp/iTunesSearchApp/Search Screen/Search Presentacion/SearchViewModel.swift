@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SearchFeature
 
 public struct SearchViewModel {
     public let songs: [Song]

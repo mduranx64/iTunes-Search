@@ -13,8 +13,6 @@
 		495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72F624FFC4240004A688 /* AppDelegate.swift */; };
 		495E730024FFC4280004A688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E72FF24FFC4280004A688 /* Assets.xcassets */; };
 		495E730324FFC4280004A688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E730124FFC4280004A688 /* LaunchScreen.storyboard */; };
-		496C468524FFF8670016780F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732E24FFF4460039EBF1 /* Song.swift */; };
-		496C468624FFF8670016780F /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732F24FFF4460039EBF1 /* SearchLoader.swift */; };
 		496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */; };
 		496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */; };
 		496C468924FFF86C0016780F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733324FFF4460039EBF1 /* HTTPClient.swift */; };
@@ -23,7 +21,6 @@
 		496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733724FFF4460039EBF1 /* SearchPresenter.swift */; };
 		496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733824FFF4460039EBF1 /* SearchViewModel.swift */; };
 		496C468F250010C90016780F /* SearchUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C468E250010C90016780F /* SearchUIComposer.swift */; };
-		496C4698250029950016780F /* SearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C4697250029950016780F /* SearchCache.swift */; };
 		496C469A25002B030016780F /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469925002B030016780F /* HTTPClientSpy.swift */; };
 		496C469C25002BDF0016780F /* LocalSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469B25002BDF0016780F /* LocalSearchLoader.swift */; };
 		496C469F25002E1A0016780F /* InMemorySearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C469E25002E1A0016780F /* InMemorySearchCache.swift */; };
@@ -31,12 +28,12 @@
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
 		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
-		496C46A9250054C30016780F /* SearchImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A8250054C30016780F /* SearchImageDataLoader.swift */; };
 		496C46AB250056210016780F /* RemoteSearchImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46AA250056210016780F /* RemoteSearchImageDataLoader.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
 		49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */; };
+		49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDD6255C823C006075EE /* SearchFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +49,6 @@
 /* Begin PBXFileReference section */
 		4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderPresentacionAdapter.swift; sourceTree = "<group>"; };
 		4906732724FFF3630039EBF1 /* iTunesSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iTunesSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4906732E24FFF4460039EBF1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		4906732F24FFF4460039EBF1 /* SearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoader.swift; sourceTree = "<group>"; };
 		4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapper.swift; sourceTree = "<group>"; };
 		4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesRemoteResult.swift; sourceTree = "<group>"; };
 		4906733324FFF4460039EBF1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -71,7 +66,6 @@
 		495E730924FFC4280004A688 /* iTunesSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E730F24FFC4280004A688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496C468E250010C90016780F /* SearchUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIComposer.swift; sourceTree = "<group>"; };
-		496C4697250029950016780F /* SearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCache.swift; sourceTree = "<group>"; };
 		496C469925002B030016780F /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		496C469B25002BDF0016780F /* LocalSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchLoader.swift; sourceTree = "<group>"; };
 		496C469E25002E1A0016780F /* InMemorySearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemorySearchCache.swift; sourceTree = "<group>"; };
@@ -79,12 +73,12 @@
 		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		496C46A4250042660016780F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		496C46A6250044330016780F /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		496C46A8250054C30016780F /* SearchImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageDataLoader.swift; sourceTree = "<group>"; };
 		496C46AA250056210016780F /* RemoteSearchImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchImageDataLoader.swift; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
 		49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Configuration.swift"; sourceTree = "<group>"; };
+		49BCDDD1255C813C006075EE /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../../SearchFeature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,17 +128,6 @@
 			path = "Search Cache";
 			sourceTree = "<group>";
 		};
-		4906733024FFF4460039EBF1 /* Search Feature */ = {
-			isa = PBXGroup;
-			children = (
-				4906732E24FFF4460039EBF1 /* Song.swift */,
-				4906732F24FFF4460039EBF1 /* SearchLoader.swift */,
-				496C4697250029950016780F /* SearchCache.swift */,
-				496C46A8250054C30016780F /* SearchImageDataLoader.swift */,
-			);
-			path = "Search Feature";
-			sourceTree = "<group>";
-		};
 		4906733624FFF4460039EBF1 /* Search API */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +163,7 @@
 		495E72EA24FFC4240004A688 = {
 			isa = PBXGroup;
 			children = (
+				49BCDDD1255C813C006075EE /* SearchFeature */,
 				495E72F524FFC4240004A688 /* iTunesSearchApp */,
 				495E730C24FFC4280004A688 /* iTunesSearchAppTests */,
 				495E72F424FFC4240004A688 /* Products */,
@@ -230,7 +215,6 @@
 		496C4695250028010016780F /* Search Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4906733024FFF4460039EBF1 /* Search Feature */,
 				4906732D24FFF4460039EBF1 /* Search Cache */,
 				4906733624FFF4460039EBF1 /* Search API */,
 				4906733924FFF4460039EBF1 /* Search Presentacion */,
@@ -282,6 +266,9 @@
 			dependencies = (
 			);
 			name = iTunesSearchApp;
+			packageProductDependencies = (
+				49BCDDD6255C823C006075EE /* SearchFeature */,
+			);
 			productName = iTunesSearchApp;
 			productReference = 495E72F324FFC4240004A688 /* iTunesSearchApp.app */;
 			productType = "com.apple.product-type.application";
@@ -369,11 +356,8 @@
 			files = (
 				496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */,
 				496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */,
-				496C468524FFF8670016780F /* Song.swift in Sources */,
 				496C46A5250042660016780F /* DetailsViewController.swift in Sources */,
 				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
-				496C4698250029950016780F /* SearchCache.swift in Sources */,
-				496C468624FFF8670016780F /* SearchLoader.swift in Sources */,
 				496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */,
 				4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */,
 				496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */,
@@ -389,7 +373,6 @@
 				496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */,
 				496C468F250010C90016780F /* SearchUIComposer.swift in Sources */,
 				49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */,
-				496C46A9250054C30016780F /* SearchImageDataLoader.swift in Sources */,
 				496C468A24FFF86C0016780F /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +636,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49BCDDD6255C823C006075EE /* SearchFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 495E72EB24FFC4240004A688 /* Project object */;
 }

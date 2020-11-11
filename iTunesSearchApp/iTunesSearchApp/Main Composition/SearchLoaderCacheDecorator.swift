@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SearchFeature
 
 public final class SearchLoaderCacheDecorator: SearchLoader {
     private let decoratee: SearchLoader

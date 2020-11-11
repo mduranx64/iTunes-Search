@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SearchFeature
 
 public protocol SearchView {
     func display(_ viewModel: SearchViewModel)

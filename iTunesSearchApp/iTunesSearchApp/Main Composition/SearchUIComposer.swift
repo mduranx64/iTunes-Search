@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SearchFeature
 
 public final class SearchUIComposer {
     private init(){}

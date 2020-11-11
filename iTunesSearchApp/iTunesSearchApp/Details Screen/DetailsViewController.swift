@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import SearchFeature
 
 public final class DetailsViewController: UIViewController {
     @IBOutlet weak var artworkImage: UIImageView!

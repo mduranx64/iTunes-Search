@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SearchFeature
 
 public final class RemoteSearchImageDataLoader: SearchImageDataLoader {
 

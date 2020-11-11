@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SearchFeature
 
 final class SearchLoaderPresentacionAdapter: MainSearchViewControllerDelegate {
     private let searchLoader: SearchLoader
