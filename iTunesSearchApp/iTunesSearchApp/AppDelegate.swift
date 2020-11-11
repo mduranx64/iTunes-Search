@@ -8,6 +8,7 @@
 
 import UIKit
 import SearchCache
+import SearchAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

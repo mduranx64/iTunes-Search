@@ -13,11 +13,6 @@
 		495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72F624FFC4240004A688 /* AppDelegate.swift */; };
 		495E730024FFC4280004A688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E72FF24FFC4280004A688 /* Assets.xcassets */; };
 		495E730324FFC4280004A688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E730124FFC4280004A688 /* LaunchScreen.storyboard */; };
-		496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */; };
-		496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */; };
-		496C468924FFF86C0016780F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733324FFF4460039EBF1 /* HTTPClient.swift */; };
-		496C468A24FFF86C0016780F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733424FFF4460039EBF1 /* URLSessionHTTPClient.swift */; };
-		496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733524FFF4460039EBF1 /* RemoteSearchLoader.swift */; };
 		496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733724FFF4460039EBF1 /* SearchPresenter.swift */; };
 		496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733824FFF4460039EBF1 /* SearchViewModel.swift */; };
 		496C468F250010C90016780F /* SearchUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C468E250010C90016780F /* SearchUIComposer.swift */; };
@@ -26,13 +21,13 @@
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
 		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
-		496C46AB250056210016780F /* RemoteSearchImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46AA250056210016780F /* RemoteSearchImageDataLoader.swift */; };
 		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
 		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
 		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
 		49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */; };
 		49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDD6255C823C006075EE /* SearchFeature */; };
 		49BCDDE6255C883B006075EE /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDE5255C883B006075EE /* SearchCache */; };
+		49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDF8255C8E34006075EE /* SearchAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +43,6 @@
 /* Begin PBXFileReference section */
 		4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderPresentacionAdapter.swift; sourceTree = "<group>"; };
 		4906732724FFF3630039EBF1 /* iTunesSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iTunesSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapper.swift; sourceTree = "<group>"; };
-		4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesRemoteResult.swift; sourceTree = "<group>"; };
-		4906733324FFF4460039EBF1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		4906733424FFF4460039EBF1 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
-		4906733524FFF4460039EBF1 /* RemoteSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchLoader.swift; sourceTree = "<group>"; };
 		4906733724FFF4460039EBF1 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		4906733824FFF4460039EBF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTraking.swift"; sourceTree = "<group>"; };
@@ -70,13 +60,13 @@
 		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		496C46A4250042660016780F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		496C46A6250044330016780F /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		496C46AA250056210016780F /* RemoteSearchImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchImageDataLoader.swift; sourceTree = "<group>"; };
 		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
 		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
 		49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Configuration.swift"; sourceTree = "<group>"; };
 		49BCDDD1255C813C006075EE /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../../SearchFeature; sourceTree = "<group>"; };
 		49BCDDDA255C8682006075EE /* SearchCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchCache; path = ../../SearchCache; sourceTree = "<group>"; };
+		49BCDDE9255C8C76006075EE /* SearchAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchAPI; path = ../../SearchAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +76,7 @@
 			files = (
 				49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */,
 				49BCDDE6255C883B006075EE /* SearchCache in Frameworks */,
+				49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,19 +109,6 @@
 			path = "Main Composition";
 			sourceTree = "<group>";
 		};
-		4906733624FFF4460039EBF1 /* Search API */ = {
-			isa = PBXGroup;
-			children = (
-				4906733124FFF4460039EBF1 /* SearchItemsMapper.swift */,
-				4906733224FFF4460039EBF1 /* ITunesRemoteResult.swift */,
-				4906733324FFF4460039EBF1 /* HTTPClient.swift */,
-				4906733424FFF4460039EBF1 /* URLSessionHTTPClient.swift */,
-				4906733524FFF4460039EBF1 /* RemoteSearchLoader.swift */,
-				496C46AA250056210016780F /* RemoteSearchImageDataLoader.swift */,
-			);
-			path = "Search API";
-			sourceTree = "<group>";
-		};
 		4906733924FFF4460039EBF1 /* Search Presentacion */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				49BCDDD1255C813C006075EE /* SearchFeature */,
+				49BCDDE9255C8C76006075EE /* SearchAPI */,
 				49BCDDDA255C8682006075EE /* SearchCache */,
 				495E72F524FFC4240004A688 /* iTunesSearchApp */,
 				495E730C24FFC4280004A688 /* iTunesSearchAppTests */,
@@ -206,7 +185,6 @@
 		496C4695250028010016780F /* Search Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4906733624FFF4460039EBF1 /* Search API */,
 				4906733924FFF4460039EBF1 /* Search Presentacion */,
 				496C46942500203C0016780F /* Search UI */,
 			);
@@ -259,6 +237,7 @@
 			packageProductDependencies = (
 				49BCDDD6255C823C006075EE /* SearchFeature */,
 				49BCDDE5255C883B006075EE /* SearchCache */,
+				49BCDDF8255C8E34006075EE /* SearchAPI */,
 			);
 			productName = iTunesSearchApp;
 			productReference = 495E72F324FFC4240004A688 /* iTunesSearchApp.app */;
@@ -345,8 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496C468B24FFF86C0016780F /* RemoteSearchLoader.swift in Sources */,
-				496C468724FFF86C0016780F /* SearchItemsMapper.swift in Sources */,
 				496C46A5250042660016780F /* DetailsViewController.swift in Sources */,
 				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
 				496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */,
@@ -354,15 +331,11 @@
 				496C468D24FFF8730016780F /* SearchViewModel.swift in Sources */,
 				496C468C24FFF8730016780F /* SearchPresenter.swift in Sources */,
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
-				496C468924FFF86C0016780F /* HTTPClient.swift in Sources */,
-				496C46AB250056210016780F /* RemoteSearchImageDataLoader.swift in Sources */,
 				496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */,
 				49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */,
 				49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */,
-				496C468824FFF86C0016780F /* ITunesRemoteResult.swift in Sources */,
 				496C468F250010C90016780F /* SearchUIComposer.swift in Sources */,
 				49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */,
-				496C468A24FFF86C0016780F /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +607,10 @@
 		49BCDDE5255C883B006075EE /* SearchCache */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchCache;
+		};
+		49BCDDF8255C8E34006075EE /* SearchAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
