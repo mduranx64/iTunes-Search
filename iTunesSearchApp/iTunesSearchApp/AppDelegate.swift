@@ -51,12 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             rootViewController: mainSearchViewController
         )
         
-        mainSearchViewController.detailsViewNavigation = { [weak navigationController] song in
+        mainSearchViewController.detailsViewNavigation = { song in
             
             let detailsViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
             detailsViewController.song = song
             detailsViewController.searchImageDataLoader = remoteSearchImageDataLoader
-            navigationController?.pushViewController(detailsViewController, animated: true)
+            navigationController.pushViewController(detailsViewController, animated: true)
         }
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
