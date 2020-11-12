@@ -19,14 +19,11 @@
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
 		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
-		49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */; };
-		49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */; };
-		49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC124FFCAD7002C3738 /* UITableView+Util.swift */; };
-		49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */; };
 		49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDD6255C823C006075EE /* SearchFeature */; };
 		49BCDDE6255C883B006075EE /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDE5255C883B006075EE /* SearchCache */; };
 		49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDF8255C8E34006075EE /* SearchAPI */; };
 		49BCDE0F255C95C1006075EE /* SearchPresentacion in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDE0E255C95C1006075EE /* SearchPresentacion */; };
+		49BCDE28255C99B1006075EE /* SearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDE27255C99B1006075EE /* SearchUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +54,11 @@
 		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		496C46A4250042660016780F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		496C46A6250044330016780F /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
-		49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchDataSource.swift; sourceTree = "<group>"; };
-		49867AC124FFCAD7002C3738 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
-		49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Configuration.swift"; sourceTree = "<group>"; };
 		49BCDDD1255C813C006075EE /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../../SearchFeature; sourceTree = "<group>"; };
 		49BCDDDA255C8682006075EE /* SearchCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchCache; path = ../../SearchCache; sourceTree = "<group>"; };
 		49BCDDE9255C8C76006075EE /* SearchAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchAPI; path = ../../SearchAPI; sourceTree = "<group>"; };
 		49BCDE05255C9537006075EE /* SearchPresentacion */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchPresentacion; path = ../../SearchPresentacion; sourceTree = "<group>"; };
+		49BCDE12255C979C006075EE /* SearchUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchUI; path = ../../SearchUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */,
+				49BCDE28255C99B1006075EE /* SearchUI in Frameworks */,
 				49BCDDE6255C883B006075EE /* SearchCache in Frameworks */,
 				49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */,
 				49BCDE0F255C95C1006075EE /* SearchPresentacion in Frameworks */,
@@ -125,6 +120,7 @@
 				49BCDDE9255C8C76006075EE /* SearchAPI */,
 				49BCDDDA255C8682006075EE /* SearchCache */,
 				49BCDE05255C9537006075EE /* SearchPresentacion */,
+				49BCDE12255C979C006075EE /* SearchUI */,
 				495E72F524FFC4240004A688 /* iTunesSearchApp */,
 				495E730C24FFC4280004A688 /* iTunesSearchAppTests */,
 				495E72F424FFC4240004A688 /* Products */,
@@ -144,7 +140,6 @@
 		495E72F524FFC4240004A688 /* iTunesSearchApp */ = {
 			isa = PBXGroup;
 			children = (
-				496C4695250028010016780F /* Search Screen */,
 				496C4696250028290016780F /* Details Screen */,
 				4906732C24FFF42D0039EBF1 /* Main Composition */,
 				495E72F624FFC4240004A688 /* AppDelegate.swift */,
@@ -164,23 +159,6 @@
 			path = iTunesSearchAppTests;
 			sourceTree = "<group>";
 		};
-		496C46942500203C0016780F /* Search UI */ = {
-			isa = PBXGroup;
-			children = (
-				49867ABE24FFCA55002C3738 /* Helpers */,
-				49867ABD24FFCA3C002C3738 /* Controllers */,
-			);
-			path = "Search UI";
-			sourceTree = "<group>";
-		};
-		496C4695250028010016780F /* Search Screen */ = {
-			isa = PBXGroup;
-			children = (
-				496C46942500203C0016780F /* Search UI */,
-			);
-			path = "Search Screen";
-			sourceTree = "<group>";
-		};
 		496C4696250028290016780F /* Details Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,24 +166,6 @@
 				496C46A6250044330016780F /* DetailsViewController.xib */,
 			);
 			path = "Details Screen";
-			sourceTree = "<group>";
-		};
-		49867ABD24FFCA3C002C3738 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				49867ABB24FFCA12002C3738 /* MainSearchViewController.swift */,
-				49867ABF24FFCA7F002C3738 /* MainSearchDataSource.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		49867ABE24FFCA55002C3738 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				49867AC124FFCAD7002C3738 /* UITableView+Util.swift */,
-				49867AC324FFCB16002C3738 /* UITableView+Configuration.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +189,7 @@
 				49BCDDE5255C883B006075EE /* SearchCache */,
 				49BCDDF8255C8E34006075EE /* SearchAPI */,
 				49BCDE0E255C95C1006075EE /* SearchPresentacion */,
+				49BCDE27255C99B1006075EE /* SearchUI */,
 			);
 			productName = iTunesSearchApp;
 			productReference = 495E72F324FFC4240004A688 /* iTunesSearchApp.app */;
@@ -316,15 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				496C46A5250042660016780F /* DetailsViewController.swift in Sources */,
-				49867AC024FFCA7F002C3738 /* MainSearchDataSource.swift in Sources */,
 				496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */,
 				4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */,
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
 				496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */,
-				49867ABC24FFCA12002C3738 /* MainSearchViewController.swift in Sources */,
-				49867AC424FFCB16002C3738 /* UITableView+Configuration.swift in Sources */,
 				496C468F250010C90016780F /* SearchUIComposer.swift in Sources */,
-				49867AC224FFCAD7002C3738 /* UITableView+Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +561,10 @@
 		49BCDE0E255C95C1006075EE /* SearchPresentacion */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchPresentacion;
+		};
+		49BCDE27255C99B1006075EE /* SearchUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
