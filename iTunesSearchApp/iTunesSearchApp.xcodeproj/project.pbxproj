@@ -19,11 +19,11 @@
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
 		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
-		49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDD6255C823C006075EE /* SearchFeature */; };
-		49BCDDE6255C883B006075EE /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDE5255C883B006075EE /* SearchCache */; };
-		49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDDF8255C8E34006075EE /* SearchAPI */; };
-		49BCDE0F255C95C1006075EE /* SearchPresentacion in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDE0E255C95C1006075EE /* SearchPresentacion */; };
-		49BCDE28255C99B1006075EE /* SearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49BCDE27255C99B1006075EE /* SearchUI */; };
+		499F6602255CF53A00B364F9 /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6601255CF53A00B364F9 /* SearchAPI */; };
+		499F6604255CF53A00B364F9 /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6603255CF53A00B364F9 /* SearchCache */; };
+		499F6606255CF53A00B364F9 /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6605255CF53A00B364F9 /* SearchFeature */; };
+		499F6608255CF53A00B364F9 /* SearchPresentacion in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6607255CF53A00B364F9 /* SearchPresentacion */; };
+		499F660A255CF53A00B364F9 /* SearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6609255CF53A00B364F9 /* SearchUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +54,11 @@
 		496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		496C46A4250042660016780F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		496C46A6250044330016780F /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		49BCDDD1255C813C006075EE /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../../SearchFeature; sourceTree = "<group>"; };
-		49BCDDDA255C8682006075EE /* SearchCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchCache; path = ../../SearchCache; sourceTree = "<group>"; };
-		49BCDDE9255C8C76006075EE /* SearchAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchAPI; path = ../../SearchAPI; sourceTree = "<group>"; };
-		49BCDE05255C9537006075EE /* SearchPresentacion */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchPresentacion; path = ../../SearchPresentacion; sourceTree = "<group>"; };
-		49BCDE12255C979C006075EE /* SearchUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchUI; path = ../../SearchUI; sourceTree = "<group>"; };
+		499F65FA255CF4FE00B364F9 /* SearchUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchUI; path = ../SearchUI; sourceTree = "<group>"; };
+		499F65FB255CF4FE00B364F9 /* SearchAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchAPI; path = ../SearchAPI; sourceTree = "<group>"; };
+		499F65FC255CF4FE00B364F9 /* SearchCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchCache; path = ../SearchCache; sourceTree = "<group>"; };
+		499F65FD255CF4FE00B364F9 /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../SearchFeature; sourceTree = "<group>"; };
+		499F65FE255CF4FE00B364F9 /* SearchPresentacion */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchPresentacion; path = ../SearchPresentacion; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BCDDD7255C823C006075EE /* SearchFeature in Frameworks */,
-				49BCDE28255C99B1006075EE /* SearchUI in Frameworks */,
-				49BCDDE6255C883B006075EE /* SearchCache in Frameworks */,
-				49BCDDF9255C8E34006075EE /* SearchAPI in Frameworks */,
-				49BCDE0F255C95C1006075EE /* SearchPresentacion in Frameworks */,
+				499F6602255CF53A00B364F9 /* SearchAPI in Frameworks */,
+				499F660A255CF53A00B364F9 /* SearchUI in Frameworks */,
+				499F6604255CF53A00B364F9 /* SearchCache in Frameworks */,
+				499F6606255CF53A00B364F9 /* SearchFeature in Frameworks */,
+				499F6608255CF53A00B364F9 /* SearchPresentacion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,11 +116,11 @@
 		495E72EA24FFC4240004A688 = {
 			isa = PBXGroup;
 			children = (
-				49BCDDD1255C813C006075EE /* SearchFeature */,
-				49BCDDE9255C8C76006075EE /* SearchAPI */,
-				49BCDDDA255C8682006075EE /* SearchCache */,
-				49BCDE05255C9537006075EE /* SearchPresentacion */,
-				49BCDE12255C979C006075EE /* SearchUI */,
+				499F65FB255CF4FE00B364F9 /* SearchAPI */,
+				499F65FC255CF4FE00B364F9 /* SearchCache */,
+				499F65FD255CF4FE00B364F9 /* SearchFeature */,
+				499F65FE255CF4FE00B364F9 /* SearchPresentacion */,
+				499F65FA255CF4FE00B364F9 /* SearchUI */,
 				495E72F524FFC4240004A688 /* iTunesSearchApp */,
 				495E730C24FFC4280004A688 /* iTunesSearchAppTests */,
 				495E72F424FFC4240004A688 /* Products */,
@@ -185,11 +185,11 @@
 			);
 			name = iTunesSearchApp;
 			packageProductDependencies = (
-				49BCDDD6255C823C006075EE /* SearchFeature */,
-				49BCDDE5255C883B006075EE /* SearchCache */,
-				49BCDDF8255C8E34006075EE /* SearchAPI */,
-				49BCDE0E255C95C1006075EE /* SearchPresentacion */,
-				49BCDE27255C99B1006075EE /* SearchUI */,
+				499F6601255CF53A00B364F9 /* SearchAPI */,
+				499F6603255CF53A00B364F9 /* SearchCache */,
+				499F6605255CF53A00B364F9 /* SearchFeature */,
+				499F6607255CF53A00B364F9 /* SearchPresentacion */,
+				499F6609255CF53A00B364F9 /* SearchUI */,
 			);
 			productName = iTunesSearchApp;
 			productReference = 495E72F324FFC4240004A688 /* iTunesSearchApp.app */;
@@ -546,23 +546,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		49BCDDD6255C823C006075EE /* SearchFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SearchFeature;
-		};
-		49BCDDE5255C883B006075EE /* SearchCache */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SearchCache;
-		};
-		49BCDDF8255C8E34006075EE /* SearchAPI */ = {
+		499F6601255CF53A00B364F9 /* SearchAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchAPI;
 		};
-		49BCDE0E255C95C1006075EE /* SearchPresentacion */ = {
+		499F6603255CF53A00B364F9 /* SearchCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchCache;
+		};
+		499F6605255CF53A00B364F9 /* SearchFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchFeature;
+		};
+		499F6607255CF53A00B364F9 /* SearchPresentacion */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchPresentacion;
 		};
-		49BCDE27255C99B1006075EE /* SearchUI */ = {
+		499F6609255CF53A00B364F9 /* SearchUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchUI;
 		};
