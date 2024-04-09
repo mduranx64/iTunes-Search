@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private lazy var localSearchLoader: LocalSearchLoader = {
         LocalSearchLoader(searchCache: inMemorySearchChace)
     }()
+    
+    private lazy var analytics: Analytics = {
+        Analytics()
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -46,6 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 decoratee: remoteSearchLoader,
                 searchCache: inMemorySearchChace),
             fallback: localSearchLoader))
+        
+        mainSearchViewController.onViewWillAppear {
+            self.analytics.sendMark(text: "MainSearchViewController ViewWillAppear")
+        }
             
         let navigationController = UINavigationController(
             rootViewController: mainSearchViewController
@@ -53,10 +61,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         mainSearchViewController.detailsViewNavigation = { song in
             
+            self.analytics.sendMark(text: "Item selected \(song.trackId)")
+            
             let detailsViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
             detailsViewController.song = song
             detailsViewController.searchImageDataLoader = remoteSearchImageDataLoader
             navigationController.pushViewController(detailsViewController, animated: true)
+            
+            detailsViewController.onViewWillAppear {
+                self.analytics.sendMark(text: "DetailsViewController ViewWillAppear")
+            }
         }
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

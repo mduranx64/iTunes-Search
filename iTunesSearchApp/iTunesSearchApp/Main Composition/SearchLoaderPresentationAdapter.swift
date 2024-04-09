@@ -1,5 +1,5 @@
 //
-//  SearchLoaderPresentacionAdapter.swift
+//  SearchLoaderPresentationAdapter.swift
 //  iTunesSearchApp
 //
 //  Created by Miguel Duran on 02-09-20.
@@ -8,10 +8,10 @@
 
 import Foundation
 import SearchFeature
-import SearchPresentacion
+import SearchPresentation
 import SearchUI
 
-final class SearchLoaderPresentacionAdapter: MainSearchViewControllerDelegate {
+final class SearchLoaderPresentationAdapter: MainSearchViewControllerDelegate {
     private let searchLoader: SearchLoader
     var presenter: SearchPresenter?
     
@@ -21,7 +21,7 @@ final class SearchLoaderPresentacionAdapter: MainSearchViewControllerDelegate {
     
     func didRequestSearchWith(_ text: String?) {
         guard let text = text else { return }
-        let urlString = "https://itunes.apple.com/search?mediaType=music&limit=20&term=\(text)"
+        let urlString = "http://itunes.apple.com/search?mediaType=music&limit=20&term=\(text)"
         guard let url = URL(string: urlString) else { return }
         searchLoader.load(from: url) { [weak self] result in
             switch result {

@@ -9,19 +9,19 @@
 import Foundation
 import UIKit
 import SearchFeature
-import SearchPresentacion
+import SearchPresentation
 import SearchUI
 
 public final class SearchUIComposer {
     private init(){}
     
     public static func searchComposedWith(searchLoader: SearchLoader) -> MainSearchViewController {
-        let presentationAdapter = SearchLoaderPresentacionAdapter(searchLoader: searchLoader)
+        let presentationAdapter = SearchLoaderPresentationAdapter(searchLoader: searchLoader)
         
         let mainSearchViewController = MainSearchViewController(
             delegate: presentationAdapter,
             tableView: UITableView.makeSearchTableView(),
-            dataSource: MainSearchDataSourse()
+            dataSource: MainSearchDataSource()
         )
         mainSearchViewController.title = "iTunes Search"
         

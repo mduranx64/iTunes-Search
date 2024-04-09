@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SearchFeature
 
-public class MainSearchDataSourse: NSObject {
+public class MainSearchDataSource: NSObject {
     
     private var songs = [Song]()
     
@@ -23,7 +23,7 @@ public class MainSearchDataSourse: NSObject {
     }
 }
 
-extension MainSearchDataSourse: UITableViewDataSource {
+extension MainSearchDataSource: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
     }

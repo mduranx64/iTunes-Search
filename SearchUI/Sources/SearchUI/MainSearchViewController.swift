@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import SearchFeature
-import SearchPresentacion
+import SearchPresentation
 
 @available(iOS 11.0, *)
 public protocol MainSearchViewControllerDelegate {
@@ -20,13 +20,13 @@ public protocol MainSearchViewControllerDelegate {
 public class MainSearchViewController: UIViewController {
 
     private let tableView: UITableView
-    private let dataSource: MainSearchDataSourse
+    private let dataSource: MainSearchDataSource
     private let searchController = UISearchController(searchResultsController: nil)
     private let delegate: MainSearchViewControllerDelegate
     
     public var detailsViewNavigation: ((Song) -> ())?
     
-    public init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: MainSearchDataSourse) {
+    public init(delegate: MainSearchViewControllerDelegate, tableView: UITableView, dataSource: MainSearchDataSource) {
         self.tableView = tableView
         self.dataSource = dataSource
         self.delegate = delegate

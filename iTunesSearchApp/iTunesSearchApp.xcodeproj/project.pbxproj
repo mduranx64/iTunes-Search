@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */; };
 		4906733D24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */; platformFilter = ios; };
 		4906733E24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906733C24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift */; platformFilter = ios; };
+		491024522BC4EA91001762B0 /* SearchPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 491024512BC4EA91001762B0 /* SearchPresentation */; };
+		491024542BC4EAC6001762B0 /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 491024532BC4EAC6001762B0 /* SearchAPI */; };
+		491024562BC4EAC6001762B0 /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 491024552BC4EAC6001762B0 /* SearchCache */; };
+		491024582BC4EAC6001762B0 /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 491024572BC4EAC6001762B0 /* SearchFeature */; };
+		4910245A2BC4EAC6001762B0 /* SearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 491024592BC4EAC6001762B0 /* SearchUI */; };
+		4910245C2BC4EBA6001762B0 /* SearchLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910245B2BC4EBA6001762B0 /* SearchLoaderPresentationAdapter.swift */; };
+		4926719D255EF20000EB9142 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926719C255EF20000EB9142 /* Analytics.swift */; };
+		492671A4255EF38F00EB9142 /* UIViewController+LifecycleObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492671A3255EF38F00EB9142 /* UIViewController+LifecycleObservers.swift */; };
 		495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E72F624FFC4240004A688 /* AppDelegate.swift */; };
 		495E730024FFC4280004A688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E72FF24FFC4280004A688 /* Assets.xcassets */; };
 		495E730324FFC4280004A688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E730124FFC4280004A688 /* LaunchScreen.storyboard */; };
@@ -19,11 +26,6 @@
 		496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */; };
 		496C46A5250042660016780F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C46A4250042660016780F /* DetailsViewController.swift */; };
 		496C46A7250044330016780F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C46A6250044330016780F /* DetailsViewController.xib */; };
-		499F6602255CF53A00B364F9 /* SearchAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6601255CF53A00B364F9 /* SearchAPI */; };
-		499F6604255CF53A00B364F9 /* SearchCache in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6603255CF53A00B364F9 /* SearchCache */; };
-		499F6606255CF53A00B364F9 /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6605255CF53A00B364F9 /* SearchFeature */; };
-		499F6608255CF53A00B364F9 /* SearchPresentacion in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6607255CF53A00B364F9 /* SearchPresentacion */; };
-		499F660A255CF53A00B364F9 /* SearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 499F6609255CF53A00B364F9 /* SearchUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoaderPresentacionAdapter.swift; sourceTree = "<group>"; };
 		4906732724FFF3630039EBF1 /* iTunesSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iTunesSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4906733B24FFF4B20039EBF1 /* XCTestCase+MemoryLeakTraking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTraking.swift"; sourceTree = "<group>"; };
 		4906733C24FFF4B20039EBF1 /* LoadSearchFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSearchFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		4910245B2BC4EBA6001762B0 /* SearchLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		4926719C255EF20000EB9142 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		492671A3255EF38F00EB9142 /* UIViewController+LifecycleObservers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LifecycleObservers.swift"; sourceTree = "<group>"; };
 		495E72F324FFC4240004A688 /* iTunesSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E72F624FFC4240004A688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495E72FF24FFC4280004A688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +62,7 @@
 		499F65FB255CF4FE00B364F9 /* SearchAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchAPI; path = ../SearchAPI; sourceTree = "<group>"; };
 		499F65FC255CF4FE00B364F9 /* SearchCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchCache; path = ../SearchCache; sourceTree = "<group>"; };
 		499F65FD255CF4FE00B364F9 /* SearchFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchFeature; path = ../SearchFeature; sourceTree = "<group>"; };
-		499F65FE255CF4FE00B364F9 /* SearchPresentacion */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchPresentacion; path = ../SearchPresentacion; sourceTree = "<group>"; };
+		499F65FE255CF4FE00B364F9 /* SearchPresentation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchPresentation; path = ../SearchPresentation; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499F6602255CF53A00B364F9 /* SearchAPI in Frameworks */,
-				499F660A255CF53A00B364F9 /* SearchUI in Frameworks */,
-				499F6604255CF53A00B364F9 /* SearchCache in Frameworks */,
-				499F6606255CF53A00B364F9 /* SearchFeature in Frameworks */,
-				499F6608255CF53A00B364F9 /* SearchPresentacion in Frameworks */,
+				491024522BC4EA91001762B0 /* SearchPresentation in Frameworks */,
+				4910245A2BC4EAC6001762B0 /* SearchUI in Frameworks */,
+				491024542BC4EAC6001762B0 /* SearchAPI in Frameworks */,
+				491024562BC4EAC6001762B0 /* SearchCache in Frameworks */,
+				491024582BC4EAC6001762B0 /* SearchFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,7 @@
 		4906732C24FFF42D0039EBF1 /* Main Composition */ = {
 			isa = PBXGroup;
 			children = (
-				4906732424FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift */,
+				4910245B2BC4EBA6001762B0 /* SearchLoaderPresentationAdapter.swift */,
 				496C468E250010C90016780F /* SearchUIComposer.swift */,
 				496C46A0250037000016780F /* SearchLoaderWithFallbackComposite.swift */,
 				496C46A225003AD70016780F /* SearchLoaderCacheDecorator.swift */,
@@ -113,13 +117,29 @@
 			path = "Search API";
 			sourceTree = "<group>";
 		};
+		4926719B255EF1D000EB9142 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4926719C255EF20000EB9142 /* Analytics.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		492671A2255EF36B00EB9142 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				492671A3255EF38F00EB9142 /* UIViewController+LifecycleObservers.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		495E72EA24FFC4240004A688 = {
 			isa = PBXGroup;
 			children = (
+				499F65FD255CF4FE00B364F9 /* SearchFeature */,
 				499F65FB255CF4FE00B364F9 /* SearchAPI */,
 				499F65FC255CF4FE00B364F9 /* SearchCache */,
-				499F65FD255CF4FE00B364F9 /* SearchFeature */,
-				499F65FE255CF4FE00B364F9 /* SearchPresentacion */,
+				499F65FE255CF4FE00B364F9 /* SearchPresentation */,
 				499F65FA255CF4FE00B364F9 /* SearchUI */,
 				495E72F524FFC4240004A688 /* iTunesSearchApp */,
 				495E730C24FFC4280004A688 /* iTunesSearchAppTests */,
@@ -140,6 +160,8 @@
 		495E72F524FFC4240004A688 /* iTunesSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				492671A2255EF36B00EB9142 /* Util */,
+				4926719B255EF1D000EB9142 /* Analytics */,
 				496C4696250028290016780F /* Details Screen */,
 				4906732C24FFF42D0039EBF1 /* Main Composition */,
 				495E72F624FFC4240004A688 /* AppDelegate.swift */,
@@ -185,11 +207,11 @@
 			);
 			name = iTunesSearchApp;
 			packageProductDependencies = (
-				499F6601255CF53A00B364F9 /* SearchAPI */,
-				499F6603255CF53A00B364F9 /* SearchCache */,
-				499F6605255CF53A00B364F9 /* SearchFeature */,
-				499F6607255CF53A00B364F9 /* SearchPresentacion */,
-				499F6609255CF53A00B364F9 /* SearchUI */,
+				491024512BC4EA91001762B0 /* SearchPresentation */,
+				491024532BC4EAC6001762B0 /* SearchAPI */,
+				491024552BC4EAC6001762B0 /* SearchCache */,
+				491024572BC4EAC6001762B0 /* SearchFeature */,
+				491024592BC4EAC6001762B0 /* SearchUI */,
 			);
 			productName = iTunesSearchApp;
 			productReference = 495E72F324FFC4240004A688 /* iTunesSearchApp.app */;
@@ -277,11 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				496C46A5250042660016780F /* DetailsViewController.swift in Sources */,
+				4926719D255EF20000EB9142 /* Analytics.swift in Sources */,
 				496C46A1250037000016780F /* SearchLoaderWithFallbackComposite.swift in Sources */,
-				4906732524FFF28B0039EBF1 /* SearchLoaderPresentacionAdapter.swift in Sources */,
+				4910245C2BC4EBA6001762B0 /* SearchLoaderPresentationAdapter.swift in Sources */,
 				495E72F724FFC4240004A688 /* AppDelegate.swift in Sources */,
 				496C46A325003AD70016780F /* SearchLoaderCacheDecorator.swift in Sources */,
 				496C468F250010C90016780F /* SearchUIComposer.swift in Sources */,
+				492671A4255EF38F00EB9142 /* UIViewController+LifecycleObservers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,23 +570,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		499F6601255CF53A00B364F9 /* SearchAPI */ = {
+		491024512BC4EA91001762B0 /* SearchPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchPresentation;
+		};
+		491024532BC4EAC6001762B0 /* SearchAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchAPI;
 		};
-		499F6603255CF53A00B364F9 /* SearchCache */ = {
+		491024552BC4EAC6001762B0 /* SearchCache */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchCache;
 		};
-		499F6605255CF53A00B364F9 /* SearchFeature */ = {
+		491024572BC4EAC6001762B0 /* SearchFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchFeature;
 		};
-		499F6607255CF53A00B364F9 /* SearchPresentacion */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SearchPresentacion;
-		};
-		499F6609255CF53A00B364F9 /* SearchUI */ = {
+		491024592BC4EAC6001762B0 /* SearchUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SearchUI;
 		};
